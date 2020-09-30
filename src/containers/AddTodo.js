@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addTodo } from "../actions";
 
 export const AddTodo = ({ dispatch }) => {
   const [form, setForm] = React.useState("");
   function addTodoClearForm() {
     const tempVal = form;
     setForm("");
-    dispatch(addtodo(tempVal));
+    dispatch(addTodo(tempVal));
   }
   return (
     <div>

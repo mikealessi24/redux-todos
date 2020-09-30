@@ -11,7 +11,7 @@ export const getVisibleTodos = (todos, filter) => {
     case visibilityFilters.SHOW_COMPLETED:
       return todos.filter((todo) => todo.completed);
     case visibilityFilters.SHOW_ACTIVE:
-      return todos.filter((todos) => !todo.completed);
+      return todos.filter((todo) => !todo.completed);
     default:
       return todos;
   }
