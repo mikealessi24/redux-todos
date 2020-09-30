@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import TodoList from "../components/TodoList";
 
 const { visibilityFilters, toggleTodo } = require("../actions");
 
@@ -26,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(VisibleTodoList);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
